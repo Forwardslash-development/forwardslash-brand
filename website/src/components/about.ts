@@ -7,17 +7,17 @@ export function renderAbout(): string {
         </div>
         <div class="about-grid">
           <div class="about-left reveal reveal-delay-1">
-            <h2 class="section-heading">One developer.<br>Full accountability.</h2>
+            <h2 class="section-heading">Expert craft.<br>No gatekeepers.</h2>
           </div>
           <div class="about-right reveal reveal-delay-2">
             <p class="body-lg">
-              Forwardslash is a solo web application development practice. There is no team, no account manager, no junior handed your project once the contract is signed.
+              Forwardslash is a web application development practice built around a single principle: software should be engineered with precision, owned completely, and distributed on your terms.
             </p>
             <p class="body-md">
-              You get one person — who scopes, designs, builds, ships, and maintains your application. That means faster decisions, tighter feedback loops, and work that someone actually gives a damn about.
+              We build full-stack web applications and Progressive Web Apps that run everywhere — without App Store approvals, platform cuts, or update cycles dictated by someone else's review queue. The web is the platform. We know it thoroughly.
             </p>
             <p class="body-md">
-              The name comes from <span class="inline-code">https://</span> — the double forward slash at the start of every URL on the web. This is native territory.
+              Every engagement is characterised by direct communication, rigorous technical standards, and code that the next developer — or your own team — can actually work with. We write for longevity, not the deadline.
             </p>
             <div class="stat-row">
               <div class="stat">
@@ -25,12 +25,12 @@ export function renderAbout(): string {
                 <div class="stat-label">front to back</div>
               </div>
               <div class="stat">
-                <div class="stat-num">0</div>
-                <div class="stat-label">layers of overhead</div>
+                <div class="stat-num">0%</div>
+                <div class="stat-label">platform tax</div>
               </div>
               <div class="stat">
-                <div class="stat-num">1</div>
-                <div class="stat-label">person responsible</div>
+                <div class="stat-num">PWA&#8209;first</div>
+                <div class="stat-label">own your distribution</div>
               </div>
             </div>
           </div>

@@ -8,10 +8,10 @@ export function renderHero(): string {
         </div>
         <h1 class="hero-heading">
           Web applications.<br>
-          <span class="hero-heading-accent">Built right.</span>
+          <span class="hero-heading-accent">Engineered to last.</span>
         </h1>
         <p class="hero-sub">
-          Precision development for founders and teams who care about the craft. No agency overhead — you work directly with the person writing the code.
+          Precision-crafted web applications and PWAs built for the long term. No gatekeepers, no compromises — software your business owns outright, from the code to the distribution channel.
         </p>
         <div class="hero-actions">
           <a href="#work" class="btn-primary">see the work</a>

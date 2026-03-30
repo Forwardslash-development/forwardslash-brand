@@ -4,7 +4,7 @@ export function renderFooter(): string {
       <div class="container footer-inner">
         <div class="footer-mark">//</div>
         <div class="footer-copy mono-sm">
-          forwardslash development &nbsp;·&nbsp;
+          forwardslash development &nbsp;·&nbsp; engineered to last &nbsp;·&nbsp;
           <a href="https://github.com/Forwardslash-development" target="_blank" rel="noopener">github</a>
         </div>
       </div>

@@ -10,7 +10,7 @@ export function renderContact(): string {
         <div class="contact-grid">
           <div class="contact-left reveal reveal-delay-1">
             <h2 class="section-heading">Start a project.</h2>
-            <p class="body-lg">Tell me what you're building. I'll come back to you within one business day.</p>
+            <p class="body-lg">Tell us what you're building. We'll come back to you within one business day with a clear read on whether we're the right fit.</p>
             <div class="contact-meta">
               <div class="contact-meta-item">
                 <span class="mono-sm signal">response time</span>
@@ -19,6 +19,10 @@ export function renderContact(): string {
               <div class="contact-meta-item">
                 <span class="mono-sm signal">availability</span>
                 <span class="body-md">taking new projects</span>
+              </div>
+              <div class="contact-meta-item">
+                <span class="mono-sm signal">specialisation</span>
+                <span class="body-md">PWA &amp; full-stack web</span>
               </div>
             </div>
           </div>
@@ -34,12 +38,12 @@ export function renderContact(): string {
               </div>
               <div class="form-group">
                 <label class="form-label" for="project">project brief</label>
-                <textarea class="form-input form-textarea" id="project" name="project" placeholder="What are you building? What's the timeline? Any stack preferences?" required></textarea>
+                <textarea class="form-input form-textarea" id="project" name="project" placeholder="What are you building? Do you have an existing codebase? Any platform or stack preferences?" required></textarea>
               </div>
               <button type="submit" class="btn-submit">
                 open enquiry in github <span class="btn-arrow">↗</span>
               </button>
-              <p class="form-note mono-sm">// this opens a pre-filled GitHub Issue — no email required.</p>
+              <p class="form-note mono-sm">// opens a pre-filled GitHub Issue — no email required.</p>
             </form>
           </div>
         </div>
