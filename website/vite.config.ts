@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/forwardslash-brand/',
+  base: '/',
   build: {
     outDir: 'dist',
   },

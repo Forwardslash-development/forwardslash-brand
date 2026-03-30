@@ -1,0 +1,23 @@
+{
+  "name": "forwardslash-brand",
+  "version": "1.0.0",
+  "description": "This repository contains all brand assets, guidelines, and design files for Forwardslash Development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forwardslash-development/forwardslash-brand.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Forwardslash-development/forwardslash-brand/issues"
+  },
+  "homepage": "https://github.com/Forwardslash-development/forwardslash-brand#readme",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
