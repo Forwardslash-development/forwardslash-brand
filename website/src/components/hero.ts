@@ -30,7 +30,7 @@ export function initHero(): void {
   const el = document.getElementById('typedUrl')
   if (!el) return
 
-  const text = 'https://forwardslash.dev'
+  const text = 'https://forwardslash-development.com'
   let i = 0
 
   const type = () => {
