@@ -27,8 +27,8 @@ initReveal()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/forwardslash-brand/sw.js', {
-      scope: '/forwardslash-brand/'
+    navigator.serviceWorker.register('/sw.js', {
+      scope: '/'
     })
   })
 }
