@@ -1,0 +1,22 @@
+/* // forwardslash development — color tokens */
+
+:root {
+  /* Core palette */
+  --fs-signal:    #00E5B0;  /* Primary accent — links, icons, highlights */
+  --fs-void:      #0A0A0B;  /* Primary background */
+  --fs-surface:   #1A1A1E;  /* Secondary background, cards */
+  --fs-depth:     #2A2A30;  /* Borders, dividers */
+  --fs-parchment: #F0EEE8;  /* Light surface, inverted contexts */
+  --fs-parchment-2: #E4E2DB;
+
+  /* Semantic aliases */
+  --fs-bg:        var(--fs-void);
+  --fs-bg-2:      var(--fs-surface);
+  --fs-fg:        var(--fs-parchment);
+  --fs-accent:    var(--fs-signal);
+  --fs-border:    var(--fs-depth);
+
+  /* Typography */
+  --fs-font-mono: 'Space Mono', 'Courier New', monospace;
+  --fs-font-sans: 'DM Sans', system-ui, sans-serif;
+}
