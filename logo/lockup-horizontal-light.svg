@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" width="480" height="80">
+  <rect width="480" height="80" fill="#F0EEE8"/>
+  <text x="16" y="60" font-family="'Space Mono', 'Courier New', monospace" font-size="52" font-weight="700" fill="#0A0A0B" letter-spacing="-5">//</text>
+  <text x="102" y="52" font-family="'Space Mono', 'Courier New', monospace" font-size="28" font-weight="700" fill="#0A0A0B" letter-spacing="-0.5">forwardslash</text>
+  <text x="104" y="68" font-family="'Space Mono', 'Courier New', monospace" font-size="10" font-weight="400" fill="#0A0A0B" letter-spacing="3" opacity="0.4">DEVELOPMENT</text>
+</svg>
