@@ -34,7 +34,7 @@ forwardslash-brand/
 ## Tagline
 
 ```
-// built to ship.
+// engineered to last.
 ```
 
 ---
