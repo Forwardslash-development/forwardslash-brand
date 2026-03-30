@@ -72,7 +72,7 @@ export function initContact(): void {
       project,
       '',
       '---',
-      '_Submitted via forwardslash.dev_',
+      '_Submitted via forwardslash-development.com_',
     ].join('\n')
 
     const url = new URL(`https://github.com/${GITHUB_REPO}/issues/new`)
