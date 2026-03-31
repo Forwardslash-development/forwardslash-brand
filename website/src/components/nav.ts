@@ -1,5 +1,5 @@
 import { renderThemeToggle } from './theme'
-import { animate, get } from 'animejs'
+import { animate } from 'animejs'
 
 function renderLogoSVG(): string {
   return `
