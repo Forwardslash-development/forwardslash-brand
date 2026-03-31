@@ -10,7 +10,7 @@ export function renderServices(): string {
           <div class="service-card">
             <div class="service-icon">[pwa]</div>
             <h3 class="service-title">Progressive Web Apps</h3>
-            <p class="service-body">Ship once to every device — desktop, mobile, tablet — without App Store approvals, platform cuts, or fragmented codebases. PWAs are installed directly from the browser, update silently, and work offline. You own the distribution channel entirely.</p>
+            <p class="service-body">Ship once to every device — desktop, mobile, tablet — without App Store approvals, platform cuts, or fragmented codebases. PWAs install directly from the browser, update silently, and work offline. You own the distribution channel entirely.</p>
             <ul class="service-stack">
               <li>Install from browser — no app store</li>
               <li>Offline-capable, push notifications</li>
@@ -28,9 +28,29 @@ export function renderServices(): string {
             </ul>
           </div>
           <div class="service-card">
+            <div class="service-icon">[ai]</div>
+            <h3 class="service-title">AI Integration</h3>
+            <p class="service-body">Practical AI features built into your product — not bolted on. From LLM-powered interfaces and intelligent search to document processing and automated workflows, we integrate AI where it genuinely adds value.</p>
+            <ul class="service-stack">
+              <li>OpenAI, Anthropic, Gemini APIs</li>
+              <li>RAG pipelines &amp; vector search</li>
+              <li>Streaming interfaces &amp; agents</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">[dev]</div>
+            <h3 class="service-title">Device &amp; Hardware Web</h3>
+            <p class="service-body">Web applications that talk to the physical world. Using modern browser APIs we connect your web app directly to hardware — no native app required. Ideal for kiosks, industrial tools, point-of-sale, and IoT dashboards.</p>
+            <ul class="service-stack">
+              <li>Web Bluetooth &amp; Web USB</li>
+              <li>Web Serial, NFC, Geolocation</li>
+              <li>Camera, sensors &amp; media APIs</li>
+            </ul>
+          </div>
+          <div class="service-card">
             <div class="service-icon">[api]</div>
             <h3 class="service-title">APIs &amp; Backends</h3>
-            <p class="service-body">Robust, well-documented APIs and server-side systems built to scale cleanly. Designed with clear contracts, sensible abstractions, and the kind of documentation that means your team isn't reverse-engineering intent six months later.</p>
+            <p class="service-body">Robust, well-documented APIs and server-side systems built to scale cleanly. Designed with clear contracts, sensible abstractions, and documentation that means your team isn't reverse-engineering intent six months later.</p>
             <ul class="service-stack">
               <li>PostgreSQL, Redis</li>
               <li>REST, GraphQL, WebSockets</li>
