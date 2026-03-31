@@ -1,5 +1,5 @@
 import { renderThemeToggle } from './theme'
-import anime from 'animejs'
+import { animate, get } from 'animejs'
 
 function renderLogoSVG(): string {
   return `
@@ -68,26 +68,30 @@ export function initNav(): void {
   }
 
   // Draw-in animation
-  const slashes = document.querySelectorAll<SVGPathElement>('.slash-1, .slash-2')
-  slashes.forEach(path => {
-    const length = path.getTotalLength()
-    path.style.strokeDasharray = `${length}`
-    path.style.strokeDashoffset = `${length}`
-  })
+  const slash1 = document.querySelector<SVGPathElement>('.slash-1')
+  const slash2 = document.querySelector<SVGPathElement>('.slash-2')
 
-  anime({
-    targets: '.slash-1',
-    strokeDashoffset: [anime.get(document.querySelector('.slash-1')!, 'strokeDashoffset'), 0],
-    duration: 500,
-    delay: 200,
-    easing: 'easeInOutCubic',
-  })
+  if (slash1 && slash2) {
+    const len1 = slash1.getTotalLength()
+    const len2 = slash2.getTotalLength()
 
-  anime({
-    targets: '.slash-2',
-    strokeDashoffset: [anime.get(document.querySelector('.slash-2')!, 'strokeDashoffset'), 0],
-    duration: 500,
-    delay: 420,
-    easing: 'easeInOutCubic',
-  })
+    slash1.style.strokeDasharray = `${len1}`
+    slash1.style.strokeDashoffset = `${len1}`
+    slash2.style.strokeDasharray = `${len2}`
+    slash2.style.strokeDashoffset = `${len2}`
+
+    animate(slash1, {
+      strokeDashoffset: [len1, 0],
+      duration: 500,
+      delay: 200,
+      easing: 'easeInOutCubic',
+    })
+
+    animate(slash2, {
+      strokeDashoffset: [len2, 0],
+      duration: 500,
+      delay: 420,
+      easing: 'easeInOutCubic',
+    })
+  }
 }
