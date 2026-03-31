@@ -675,3 +675,82 @@ a { color: inherit; text-decoration: none; }
 [data-theme="light"] .slash-2 {
   stroke: #007A5E;
 }
+
+/* ─── GLITCH ────────────────────────────────────────────────────────────────── */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.glitch::before {
+  color: #ff003c;
+  animation: glitch-before 1.8s steps(1) forwards;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+}
+
+.glitch::after {
+  color: #00e5ff;
+  animation: glitch-after 1.8s steps(1) forwards;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+}
+
+.hero-heading-accent::before { color: #ff003c; }
+.hero-heading-accent::after  { color: #00e5ff; }
+
+@keyframes glitch-before {
+  0%   { transform: translate(-4px,  2px) skewX(-2deg); opacity: 1; }
+  5%   { transform: translate( 4px, -2px) skewX( 3deg); opacity: 1; }
+  10%  { transform: translate(-6px,  1px) skewX(-1deg); opacity: 1; }
+  15%  { transform: translate( 2px,  4px) skewX( 2deg); opacity: 1; }
+  20%  { transform: translate(-3px, -3px) skewX(-3deg); opacity: 1; }
+  25%  { transform: translate( 5px,  2px) skewX( 1deg); opacity: 1; }
+  30%  { transform: translate(-2px,  3px) skewX(-2deg); opacity: 1; }
+  35%  { transform: translate( 6px, -1px) skewX( 3deg); opacity: 1; }
+  40%  { transform: translate(-4px,  2px) skewX(-1deg); opacity: 1; }
+  45%  { transform: translate( 3px,  1px) skewX( 2deg); opacity: 1; }
+  50%  { transform: translate(-5px, -2px) skewX(-3deg); opacity: 1; }
+  55%  { transform: translate( 2px,  4px) skewX( 1deg); opacity: 1; }
+  60%  { transform: translate(-3px,  1px) skewX(-2deg); opacity: 1; }
+  65%  { transform: translate( 4px, -3px) skewX( 2deg); opacity: 0; }
+  70%  { transform: translate(-2px,  2px) skewX(-1deg); opacity: 0; }
+  75%  { transform: translate( 1px, -1px) skewX( 1deg); opacity: 0; }
+  80%  { transform: translate( 0,    0  ) skewX( 0deg); opacity: 0; }
+  100% { transform: translate( 0,    0  ) skewX( 0deg); opacity: 0; }
+}
+
+@keyframes glitch-after {
+  0%   { transform: translate( 4px, -2px) skewX( 2deg); opacity: 1; }
+  5%   { transform: translate(-4px,  2px) skewX(-3deg); opacity: 1; }
+  10%  { transform: translate( 6px, -1px) skewX( 1deg); opacity: 1; }
+  15%  { transform: translate(-2px, -4px) skewX(-2deg); opacity: 1; }
+  20%  { transform: translate( 3px,  3px) skewX( 3deg); opacity: 1; }
+  25%  { transform: translate(-5px, -2px) skewX(-1deg); opacity: 1; }
+  30%  { transform: translate( 2px, -3px) skewX( 2deg); opacity: 1; }
+  35%  { transform: translate(-6px,  1px) skewX(-3deg); opacity: 1; }
+  40%  { transform: translate( 4px, -2px) skewX( 1deg); opacity: 1; }
+  45%  { transform: translate(-3px, -1px) skewX(-2deg); opacity: 1; }
+  50%  { transform: translate( 5px,  2px) skewX( 3deg); opacity: 1; }
+  55%  { transform: translate(-2px, -4px) skewX(-1deg); opacity: 1; }
+  60%  { transform: translate( 3px, -1px) skewX( 2deg); opacity: 1; }
+  65%  { transform: translate(-4px,  3px) skewX(-2deg); opacity: 0; }
+  70%  { transform: translate( 2px, -2px) skewX( 1deg); opacity: 0; }
+  75%  { transform: translate(-1px,  1px) skewX(-1deg); opacity: 0; }
+  80%  { transform: translate( 0,    0  ) skewX( 0deg); opacity: 0; }
+  100% { transform: translate( 0,    0  ) skewX( 0deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch::before,
+  .glitch::after { display: none; }
+}

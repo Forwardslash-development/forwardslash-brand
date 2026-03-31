@@ -7,8 +7,8 @@ export function renderHero(): string {
           <span class="typed-url" id="typedUrl"></span><span class="cursor">_</span>
         </div>
         <h1 class="hero-heading">
-          Web applications.<br>
-          <span class="hero-heading-accent">Engineered to last.</span>
+          <span class="glitch" data-text="Web applications.">Web applications.</span><br>
+          <span class="glitch hero-heading-accent" data-text="Engineered to last.">Engineered to last.</span>
         </h1>
         <p class="hero-sub">
           Precision-crafted web applications and PWAs built for the long term. No gatekeepers, no compromises — software your business owns outright, from the code to the distribution channel.
