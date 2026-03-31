@@ -1,9 +1,21 @@
 import { renderThemeToggle } from './theme'
+import anime from 'animejs'
+
+function renderLogoSVG(): string {
+  return `
+    <svg class="nav-logo-svg" width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="forwardslash development">
+      <path class="slash-1" d="M6 32 L18 4" stroke="#00E5B0" stroke-width="4" stroke-linecap="round"/>
+      <path class="slash-2" d="M22 32 L34 4" stroke="#00E5B0" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+  `
+}
 
 export function renderNav(): string {
   return `
     <nav class="nav" id="nav">
-      <a href="#" class="nav-mark">//</a>
+      <a href="#" class="nav-mark" aria-label="forwardslash development home">
+        ${renderLogoSVG()}
+      </a>
       <div class="nav-links">
         <a href="#about">about</a>
         <a href="#services">services</a>
@@ -54,4 +66,28 @@ export function initNav(): void {
       })
     })
   }
+
+  // Draw-in animation
+  const slashes = document.querySelectorAll<SVGPathElement>('.slash-1, .slash-2')
+  slashes.forEach(path => {
+    const length = path.getTotalLength()
+    path.style.strokeDasharray = `${length}`
+    path.style.strokeDashoffset = `${length}`
+  })
+
+  anime({
+    targets: '.slash-1',
+    strokeDashoffset: [anime.get(document.querySelector('.slash-1')!, 'strokeDashoffset'), 0],
+    duration: 500,
+    delay: 200,
+    easing: 'easeInOutCubic',
+  })
+
+  anime({
+    targets: '.slash-2',
+    strokeDashoffset: [anime.get(document.querySelector('.slash-2')!, 'strokeDashoffset'), 0],
+    duration: 500,
+    delay: 420,
+    easing: 'easeInOutCubic',
+  })
 }
