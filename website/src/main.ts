@@ -8,6 +8,7 @@ import { renderWork } from './components/work'
 import { renderContact, initContact } from './components/contact'
 import { renderFooter } from './components/footer'
 import { initReveal } from './components/reveal'
+import { initTheme } from './components/theme'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   ${renderNav()}
@@ -20,6 +21,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   ${renderFooter()}
 `
 
+initTheme()
 initNav()
 initHero()
 initContact()
@@ -27,8 +29,6 @@ initReveal()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js', {
-      scope: '/'
-    })
+    navigator.serviceWorker.register('/sw.js', { scope: '/' })
   })
 }

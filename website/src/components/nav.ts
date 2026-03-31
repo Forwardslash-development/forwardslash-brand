@@ -1,3 +1,5 @@
+import { renderThemeToggle } from './theme'
+
 export function renderNav(): string {
   return `
     <nav class="nav" id="nav">
@@ -9,9 +11,12 @@ export function renderNav(): string {
         <a href="#work">work</a>
         <a href="#contact" class="nav-cta">get in touch</a>
       </div>
-      <button class="nav-burger" id="burger" aria-label="menu">
-        <span></span><span></span>
-      </button>
+      <div class="nav-right">
+        ${renderThemeToggle()}
+        <button class="nav-burger" id="burger" aria-label="menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </nav>
     <div class="mobile-menu" id="mobileMenu">
       <a href="#about" class="mobile-link">about</a>
