@@ -754,3 +754,39 @@ a { color: inherit; text-decoration: none; }
   .glitch::before,
   .glitch::after { display: none; }
 }
+
+/* ─── GLITCH OVERRIDE ───────────────────────────────────────────────────────── */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--mono);
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  pointer-events: none;
+}
+
+.glitch::before {
+  color: #ff003c;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  animation: glitch-before 1.8s steps(1) 0.5s forwards;
+  opacity: 0;
+}
+
+.glitch::after {
+  color: #00e5ff;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  animation: glitch-after 1.8s steps(1) 0.5s forwards;
+  opacity: 0;
+}
