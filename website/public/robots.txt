@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forwardslash-development.com/sitemap.xml
